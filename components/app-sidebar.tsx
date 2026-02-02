@@ -20,6 +20,7 @@ import {
   X,
 } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Image from "next/image"
 
 interface NavItem {
   label: string
@@ -113,8 +114,7 @@ export function AppSidebar({ isOpen, onToggle }: AppSidebarProps) {
         <div className="flex items-center justify-between p-4 border-b border-sidebar-border">
           <Link href="/" className="flex items-center gap-2">
             <div className="flex items-center gap-1">
-              <div className="w-3 h-3 bg-primary rounded-sm" />
-              <div className="w-3 h-3 bg-primary rounded-sm" />
+              <Image src="/coomarba.png" alt="COOMARBA" width={32} height={32} />
             </div>
             <span className="text-xl font-bold tracking-wide text-white">COOMARBA</span>
           </Link>
